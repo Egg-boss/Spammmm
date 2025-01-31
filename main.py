@@ -7,7 +7,7 @@ user_token = os.environ['user_token']
 spam_id = os.environ['spam_id']
 
 client = commands.Bot(command_prefix='Lickitysplit')
-intervals = [3.8, 4.0, 4.2, 4.4]
+intervals = [2.8, 3.0, 3.2, 3.8]
 
 @tasks.loop(seconds=random.choice(intervals))
 async def spam():
